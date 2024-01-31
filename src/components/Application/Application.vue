@@ -29,7 +29,6 @@
 	</div>
 </template>
 
-
 <script lang="ts">
 	import Title from "../Title/Title.vue";
 	import { OhVueIcon, addIcons } from "oh-vue-icons";
