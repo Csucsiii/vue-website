@@ -5,6 +5,7 @@
 		</div>
 		<v-navbar />
         <div class="flex flex-col overflow-auto">
+			<v-landing />
 			<v-application />
 			<v-scripts />
 			<v-streamers />
@@ -16,6 +17,7 @@
 <script lang="ts">
 	import { defineComponent } from "vue";
 	import Navbar from "./Navbar/Navbar.vue";
+	import Landing from "./Landing/Landing.vue";
 	import Application from "./Application/Application.vue";
 	import Scripts from "./Scripts/Scripts.vue";
 	import Streamers from "./Streamers/Streamers.vue";
@@ -25,6 +27,7 @@
 		name: "Layout",
 		components: {
 			"v-navbar": Navbar,
+			"v-landing": Landing,
 			"v-application": Application,
 			"v-scripts": Scripts,
 			"v-streamers": Streamers,
