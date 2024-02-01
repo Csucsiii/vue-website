@@ -12,7 +12,7 @@
 	export default defineComponent({
 		name: "Title",
 		props: {
-			label: toString
+			label: String
 		}
 	})
 </script>

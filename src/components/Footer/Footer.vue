@@ -14,7 +14,7 @@
 
 			<div class="flex justify-center items-center w-full">
 				<div class="relative aspect-video w-[2%]">
-					<Image src="/logo.webp" unoptimized fill alt="FOOTER_LOGO"/>
+					<img src="/logo.webp" alt="FOOTER_LOGO"/>
 				</div>
 				<h3 class="text-md font-medium italic mx-2">Galaxy Roleplay</h3>
 				<h3 class="text-md font-medium mx-2">Designed by: damon2114</h3>
