@@ -27,4 +27,8 @@
 		background-position: top center;
 		background-size: cover;
 	}
+
+	.icon-shadow{
+		box-shadow:  0 0 60px 15px rgba(170, 87, 160, .5), 0 0 0 0 rgba(170, 87, 160, .2);
+	}
 </style>
