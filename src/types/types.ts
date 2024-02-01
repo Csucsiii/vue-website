@@ -25,3 +25,10 @@ export interface Social {
 	ariaLabel: string,
 	icon: string
 }
+
+export interface ScriptListItem{
+	id: string,
+	icon: string,
+	title: string,
+	description: string
+}

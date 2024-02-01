@@ -24,6 +24,7 @@
 	import { FaLaptopCode } from "oh-vue-icons/icons";
 	import Title from "../Title/Title.vue";
 	import { streamerList } from "../../constants/streamers";
+	import type { StreamerProfile } from '../../types/types';
 	import Card from "./Card.vue";
 	import Button from "./Button.vue";
 
@@ -39,11 +40,11 @@
 		},
 		data(){
 			return {
-				streamers: ref(streamerList)
+				streamers: ref<StreamerProfile[]>(streamerList)
 			}
 		},
 		setup(){
-			const streamerListRef = ref(streamerList);
+			const streamerListRef = ref<StreamerProfile[]>(streamerList);
 			const expanded = ref<boolean>(false);
 
 			const toggleExpanded = () => {

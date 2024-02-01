@@ -1,4 +1,6 @@
-export const scripts = [
+import type { ScriptListItem } from "../types/types";
+
+export const scripts: ScriptListItem[] = [
 	{
 		id: "script_1",
 		icon: "fa-laptop-code",

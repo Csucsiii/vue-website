@@ -41,6 +41,7 @@
 	import { OhVueIcon, addIcons } from "oh-vue-icons";
 	import { FaDiscord, FaTiktok, FaYoutube, FaTwitch, FaSignal } from "oh-vue-icons/icons";
 	import Social from "../Social/Social.vue";
+	import type { Social as SocialListItem } from '../../types/types';
 
 	addIcons(FaDiscord, FaTiktok, FaYoutube, FaTwitch, FaSignal);
 
@@ -52,7 +53,7 @@
 		},
 		data(){
 			return {
-				socials: ref(socials)
+				socials: ref<SocialListItem[]>(socials)
 			}
 		},
 		setup(){

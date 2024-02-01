@@ -21,6 +21,7 @@
 	import Title from "../Title/Title.vue";
 	import Card from "./Card.vue";
 	import { scripts } from "../../constants/scripts";
+	import type { ScriptListItem } from "../../types/types";
 
 	addIcons(FaCode, FaScrewdriver, FaLaptopCode, FaUserSecret);
 
@@ -32,7 +33,7 @@
 			"v-card": Card
 		},
 		setup(){
-			const items = ref(scripts);
+			const items = ref<ScriptListItem[]>(scripts);
 			return {
 				items
 			}
