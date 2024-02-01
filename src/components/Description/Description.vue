@@ -61,4 +61,18 @@
 		animation: floatAstronaut 5s linear infinite;
 		overflow: hidden;
 	}
+
+	@keyframes floatAstronaut {
+		0%, 100%{
+			transform: translate(0, 0) rotateZ(0deg);
+		}
+
+		25% {
+			transform: translate(0, -2%) rotateZ(-2deg);
+		}
+
+		75% {
+			transform: translate(0, 2%) rotateZ(2deg);
+		}
+	}
 </style>
