@@ -48,7 +48,7 @@
 	})
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	.social{
 		border-radius: 50%;
 		border: 1px solid #9A208C;

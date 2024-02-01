@@ -33,7 +33,7 @@
 	});
 </script>
 
-<style>
+<style lang="scss" scoped>
 	.bg-blur{
 		filter: blur(30px);
 		width: 100%;
