@@ -1,6 +1,6 @@
 <template>
 	<div className="flex flex-col items-center w-full my-10">
-		<v-title label="Néhány szó a scriptjeinkről">
+		<v-title label="Néhány szó a scriptjeinkről" #icon>
 			<v-icon name="fa-code" scale="2.5"></v-icon>
 		</v-title>
 		<div
@@ -25,19 +25,14 @@
 	addIcons(FaCode, FaScrewdriver, FaLaptopCode, FaUserSecret);
 
 	export default defineComponent({
-		name: "Script",
+		name: "Scripts",
 		components: {
 			"v-title": Title,
 			"v-icon": OhVueIcon,
 			"v-card": Card
 		},
-		props: {},
-
 		setup(){
 			const items = ref(scripts);
-
-			console.log(scripts);
-			console.log(items);
 			return {
 				items
 			}

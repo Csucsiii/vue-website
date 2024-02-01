@@ -10,12 +10,18 @@
 	</div>
 </template>
 
-<script lang="ts" setup>
-	import type { ScriptCardProps } from "../../types/types";
-	defineProps<ScriptCardProps>();
+<script lang="ts">
+	import { defineComponent } from "vue";
+
+	export default defineComponent({
+		name: "ScriptCard",
+		props: {
+			description: String
+		}
+	})
 </script>
 
-<style>
+<style lang="scss" scoped>
 	.script-bg {
 		background-image: linear-gradient(to bottom, rgba(26, 27, 31, 0.75) 90%, rgba(26, 27, 31, 1)), url("/scripts.webp");
 		background-position: top center;

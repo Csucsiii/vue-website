@@ -1,6 +1,6 @@
 <template>
 	<div class="flex flex-col items-center w-full my-10">
-		<v-title label="Jelentkezés">
+		<v-title label="Jelentkezés" #icon>
 			<v-icon name="fa-newspaper" scale="2.5"></v-icon>
 		</v-title>
 		<div className="flex flex-col lg:flex-row justify-evenly items-center w-[90%]">
@@ -30,16 +30,17 @@
 </template>
 
 <script lang="ts">
+	import { defineComponent } from "vue";
 	import Title from "../Title/Title.vue";
 	import { OhVueIcon, addIcons } from "oh-vue-icons";
 	import { FaNewspaper } from "oh-vue-icons/icons";
 
 	addIcons(FaNewspaper);
 
-	export default {
+	export default defineComponent({
 		components: {
 			"v-title": Title,
 			"v-icon": OhVueIcon
 		}
-	}
+	});
 </script>
